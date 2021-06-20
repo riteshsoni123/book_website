@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dec.css">
     <style>
-        body{
+        body {
             background-attachment: fixed;
             background-color: rgb(255, 255, 255);
         }
 
-        #cover img{
+        .quote {
+            padding-top: 121px;
+            padding-left: 25px;
+            position: absolute;
+            font-size: 62px;
+            font-family: 'Ubuntu', sans-serif;
+            top: 8px;
+            left: 16px;
+        }
+
+        #cover {
+            position: relative;
+            text-align: left;
+            color: rgb(0 0 0);
+        }
+
+        #cover img {
             /* width: 1500px; */
             width: 1490px;
+            display: block;
+            margin: auto;
             border-radius: 10px;
-            padding-left: 5px;
+            /* padding-left: 5px; */
         }
-        #cover{
+
+        #cover {
             padding-top: 10px;
             /* background-color: rgb(0, 0, 0); */
             border-width: 2px;
@@ -26,57 +48,79 @@
             border-radius: 10px;
         }
 
-        .navbar li a:hover{
+        .navbar li a:hover {
             color: rgb(117, 117, 117);
             /* background-color: white; */
         }
-        .navbar li{
+
+        .navbar li {
             float: left;
             list-style: none;
             padding-left: 20px;
-           
+
         }
-        .navbar li a{
+
+        .navbar li a {
             color: white;
         }
-        .navbar ul{
+
+        .navbar ul {
             padding-bottom: 17px;
         }
-        .navbar{
-            
+
+        .navbar {
+
             padding: 2px;
             background-color: rgb(56, 56, 56);
             border-radius: 30px;
         }
 
-        a{
+        a {
             text-decoration: none;
         }
-        .text{
+
+        .text {
+            margin: 0px;
+            padding-top: 10px;
+            margin-bottom: 10px;
             color: rgb(0, 0, 0);
         }
-        .book{
+
+        .book {
             display: inline-block;
             border: 5px solid rgb(20, 19, 19);
             padding-right: 20px;
             padding-left: 20px;
             padding-top: 5px;
+            width: 20%;
             margin: 10px;
         }
-        .book:hover{
+
+        .book img {
+            display: block;
+            margin: auto;
+        }
+
+        .book:hover {
             background-color: rgb(165, 165, 165);
         }
 
-        .group{
-            padding-bottom: 50px;
-            margin-top: 10px;
+
+        .heading {
+            /* border: 2px solid red; */
+            display: block;
+            margin: auto;
+            width: 80%;
         }
-        
-
-
+        .heading h1{
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
     </style>
     <title>Document</title>
 </head>
+
 <body>
 
     <header>
@@ -94,274 +138,282 @@
 
     <div id="cover">
         <img src="cover2.jpg" alt="">
+        <div class="quote">A ROOM <br> WITHOUT BOOKS <br> IS LIKE <br> A BODY <br> WITHOUT <br> A SOUL</div>
     </div>
-
+    <div class="heading">
+        <h1>Books for financial education</h1>
+    </div>
     <div class="financial group">
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Millionaire-Next-Door-Surprising-Americas/dp/1589795474/ref=sr_1_1?crid=M810Z55EK6KW&dchild=1&keywords=the+millionaire+next+door&qid=1624113507&sprefix=the+mill%2Caps%2C431&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich1.jpg" alt="">
                 <p class="text">the millionaire next door</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Total-Money-Makeover-Classic-Financial/dp/1595555277/ref=sr_1_1?crid=NGY8FLT4YPJ2&dchild=1&keywords=the+total+money+makeover&qid=1624113573&sprefix=the+total%2Caps%2C-1&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich2.jpg" alt="">
                 <p class="text">the total money makeover</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Richest-Man-Babylon-George-Clason/dp/9388144317/ref=sr_1_3?crid=3CWTKA5X6YT94&dchild=1&keywords=the+richest+man+in+babylon+book&qid=1624113606&sprefix=the+richest%2Caps%2C420&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich3.jpg" alt="">
                 <p class="text">the richest man in babylon</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Will-Teach-You-Be-Rich/dp/1523505745/ref=sr_1_1?crid=1O830T158NFEK&dchild=1&keywords=i+will+teach+you+to+be+rich&qid=1624113644&sprefix=i+will+%2Caps%2C428&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich4.jpg" alt="">
                 <p class="text">i will teach you to be rich</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Think-Grow-Rich-21st-CENTURY/dp/9389931525/ref=sr_1_1?crid=2H3H99YEXWWB0&dchild=1&keywords=think+and+grow+rich+by+napoleon+hill+english&qid=1624113664&sprefix=think+and+grow%2Caps%2C595&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich5.jpg" alt="">
                 <p class="text">think and grow rich</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Intelligent-Investor-English-Paperback-2013/dp/0062312685/ref=sr_1_1?crid=2A3BSCUTW7F35&dchild=1&keywords=the+intelligent+investor&qid=1624113704&sprefix=the+intell%2Caps%2C549&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich6.jpg" alt="">
                 <p class="text">the intelligent invester</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Automatic-Millionaire-Workbook-Personalized-Automatically/dp/0767919483/ref=sr_1_1_sspa?dchild=1&keywords=the+automatic+millionaire&qid=1624113726&sr=8-1-spons&psc=1&smid=A3H3WE9M6NY1KV&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzNkNSUkpDOUdNS1ZKJmVuY3J5cHRlZElkPUEwMDM2MDg1M0oxRUpTTE1YRzFYQSZlbmNyeXB0ZWRBZElkPUEwNzQ1OTMwMzA0Tk5YNzVIWTM1ViZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich7.jpg" alt="">
                 <p class="text">the automatic millionaire</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Secrets-Millionaire-Mind-Mastering-Wealth-ebook/dp/B000FCJZ3G/ref=sr_1_2?crid=3ERT3KFFF05CD&dchild=1&keywords=secrets+of+the+millionaire+mind&qid=1624113742&sprefix=secrets+%2Caps%2C442&sr=8-2">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich8.jpg" alt="">
                 <p class="text">secrets of the millionaire mind</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268/ref=sr_1_1_sspa?crid=1QBYKXANPHL84&dchild=1&keywords=the+psychology+of+money&qid=1624113761&sprefix=the+psycho%2Caps%2C410&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE0S1hXQTNVQ0Q0S04mZW5jcnlwdGVkSWQ9QTA4OTQ4NjQxUDdFU0ZVUTZMOURLJmVuY3J5cHRlZEFkSWQ9QTAxNDUxNTgzQjgySzVVM1k5VVdIJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich9.jpg" alt="">
                 <p class="text">the psychology om money</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Richest-Engineer-Abhishek-Kumar/dp/9381506876/ref=sr_1_2?crid=3OIJ2EMSNCXTD&dchild=1&keywords=the+richest+engineer+by+abhishek+kumar&qid=1624113785&sprefix=the+richest+engineer%2Caps%2C843&sr=8-2">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich10.jpg" alt="">
                 <p class="text">the richest engineer</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Why-Rich-Are-Getting-Richer/dp/1612680976/ref=sr_1_1?crid=38F797P1YVFV1&dchild=1&keywords=why+are+rich+getting+richer&qid=1624113806&sprefix=why+are+rich+%2Caps%2C449&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="financial/rich11.jpg" alt="">
                 <p class="text">why the rich are getting richer</p>
             </a>
         </div>
     </div>
-
+    <div class="heading">
+        <h1>Novels</h1>
+    </div>
     <div class="novel group">
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/ref=sr_1_1?crid=1EB2W0DW9T0GQ&dchild=1&keywords=to+kill+a+mockingbird+by+harper+lee&qid=1624114292&sprefix=to+kill+%2Caps%2C453&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story1.jpg" alt="">
                 <p class="text">to kill a mockingbird</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Catcher-Rye-J-D-Salinger/dp/0241950422/ref=sr_1_1?crid=13F0V3MCTYKM1&dchild=1&keywords=the+catcher+in+the+rye&qid=1624114340&sprefix=the+catcher+%2Caps%2C436&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story2.jpg" alt="">
                 <p class="text">the catcher in the rye</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Hundred-Years-Solitude-International-Writers/dp/0140157514/ref=sr_1_1?crid=3TWAJT4HXFRB7&dchild=1&keywords=one+hundred+years+of+solitude+by+gabriel+garc%C3%ADa+m%C3%A1rquez&qid=1624114358&sprefix=one+hundred+%2Caps%2C501&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story3.jpg" alt="">
                 <p class="text">one hunded years of solitude</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Great-Gatsby-F-Scott-Fitzgerald/dp/8172344562/ref=sr_1_3?crid=14QMDHDBOWXJ7&dchild=1&keywords=the+great+gatsby&qid=1624114380&sprefix=the+great+%2Caps%2C494&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story4.jpg" alt="">
                 <p class="text">the great gatsby</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Fellowship-Ring-Lord-Rings/dp/0007488300/ref=sr_1_2?crid=R2L7LFW1Z20I&dchild=1&keywords=the+lords+of+the+rings&qid=1624114404&sprefix=the+lords+of+%2Caps%2C443&sr=8-2">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story5.jpg" alt="">
                 <p class="text">the lords of the rings</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Adventures-Wonderland-Through-Illustrated-Classics/dp/1626920613/ref=sr_1_1_sspa?crid=QNXI79PZEO52&dchild=1&keywords=alice+in+wonderland+by+lewis+carroll&qid=1624114442&sprefix=alice+%2Caps%2C454&sr=8-1-spons&psc=1&smid=A3H3WE9M6NY1KV&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExMksyOEVLT1ZKUjNEJmVuY3J5cHRlZElkPUEwODYzNTc4Qzc2VDdHV0FQV1FEJmVuY3J5cHRlZEFkSWQ9QTAxNTY4MzExQjFBUFlCRzFVSjlXJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story6.jpg" alt="">
                 <p class="text">alice in wonderland</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/War-Peace-Leo-Tolstoy/dp/8175992832/ref=sr_1_1_sspa?crid=2ZIOE34YEO9P4&dchild=1&keywords=war+and+peace&qid=1624114494&sprefix=war+and+%2Caps%2C451&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWjFKVU5PSTZOMFY4JmVuY3J5cHRlZElkPUEwMzQxNjg5MjQzMlVRSTRMOVZHTSZlbmNyeXB0ZWRBZElkPUEwMzE2NTA5MTI4NTJDQ1BZUjJDSSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story7.jpg" alt="">
                 <p class="text">war and peace</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Midnights-Children-Salman-Rushdie/dp/0099582074/ref=sr_1_1?crid=2NSQLCJXA04BC&dchild=1&keywords=midnight+children+by+salman+rushdie&qid=1624115066&sprefix=midnight%27s+childre%2Caps%2C442&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story8.jpg" alt="">
                 <p class="text">midnight's children</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/ADVENTURES-HUCKLEBERRY-FINN-mark-twain/dp/9389144086/ref=sr_1_5?crid=4XWTBMQWCPER&dchild=1&keywords=adventure+of+huckleberry+finn&qid=1624115084&sprefix=adventure+of+%2Caps%2C404&sr=8-5">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story9.jpg" alt="">
                 <p class="text">adventure of huckleberry finn</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Pride-Prejudice-Deluxe-Hardbound-Austen/dp/938777967X/ref=sr_1_1_sspa?crid=2K7RYDAYHKWMF&dchild=1&keywords=pride+and+prejudice+by+jane+austen&qid=1624115108&sprefix=pride+%2Caps%2C506&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFKTEJKVE41OFFGSEomZW5jcnlwdGVkSWQ9QTAwOTA2NTMyNEhPQzNGNlA3WkJYJmVuY3J5cHRlZEFkSWQ9QTAzNTkwMjUySlQ1VFgyUzNPOFlLJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story10.jpg" alt="">
                 <p class="text">pride and prejudice</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Moby-Dick-Whale-Herman-Melville/dp/8175992778/ref=sr_1_1?crid=1WQPD2RJCCPV&dchild=1&keywords=mobi+dik+by+herman+melville&qid=1624115129&sprefix=mobi+di%2Caps%2C616&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story11.jpg" alt="">
                 <p class="text">mobi dick</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Little-Women-Illustrated-Louisa-Alcott/dp/9382607153/ref=sr_1_2_sspa?crid=3PG04O1W16ENS&dchild=1&keywords=little+woman&qid=1624115149&sprefix=lottle+woman%2Caps%2C598&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWUxQT0k2UlNQODZYJmVuY3J5cHRlZElkPUEwNjQyMjUzMlVXWEVLT08zMUM4MiZlbmNyeXB0ZWRBZElkPUExMDQ0ODUwM1VRMTZQQkpCNFlWVCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story12.jpg" alt="">
                 <p class="text">little woman</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Hobbit-Battle-Armies-Official-Movie/dp/0007544146/ref=sr_1_1_sspa?crid=10IBTXIXQQADD&dchild=1&keywords=the+hobbit&qid=1624115185&sprefix=the+hobb%2Caps%2C506&sr=8-1-spons&psc=1&smid=A3H3WE9M6NY1KV&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExV1pMWFoxNUxOVVBGJmVuY3J5cHRlZElkPUEwNDA4MTQ3M0hYVEZYNFBXRUFKMiZlbmNyeXB0ZWRBZElkPUEwMzEzMDkyMVhBNUU3TTRKSFY1MSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story13.jpg" alt="">
                 <p class="text">the hobbit</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/God-Small-Things-Booker-Winner/dp/014302857X/ref=sr_1_1?crid=200KKECYDO349&dchild=1&keywords=god+of+small+things+by+arundhati+roy&qid=1624115214&sprefix=god+of+small+things%2Caps%2C519&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story14.jpg" alt="">
                 <p class="text">the god of small things</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Frankenstein-Illustrated-Classics-Om/dp/9381607788/ref=sr_1_1_sspa?crid=1Q7C5L68M9ESP&dchild=1&keywords=frankestein&qid=1624115231&sprefix=frankest%2Caps%2C451&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExMlVJWTFMVTc4WU84JmVuY3J5cHRlZElkPUEwNzI3MjYzMzlSUkY0S0Q4MThXVSZlbmNyeXB0ZWRBZElkPUEwOTU2NjA3MVIwUFBCVkM5OE81TiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story15.jpg" alt="">
                 <p class="text">frankestein</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Gullivers-Travels-Jonathan-Swift/dp/9380005865/ref=sr_1_2_sspa?crid=34J0OPXWSXMH3&dchild=1&keywords=gullivers+travels+by+jonathan+swift&qid=1624115248&sprefix=gullivers%2Caps%2C430&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSlVMNjk0RzhaVVdVJmVuY3J5cHRlZElkPUEwMTk0MzMzSUtMSFdIU0pPTlU3JmVuY3J5cHRlZEFkSWQ9QTAzODIwNTcyWVhJWUoyMUxKNDBCJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story16.jpg" alt="">
                 <p class="text">gulliver's travel</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Ikigai-H%C3%A9ctor-Garc%C3%ADa/dp/178633089X/ref=sr_1_3?crid=9OOC95KPGGE1&dchild=1&keywords=ikigai+in+english&qid=1624115261&sprefix=ikigai%2Caps%2C443&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="novel/story17.jpg" alt="">
                 <p class="text">ikigai</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Originals-David-Copperfield-Charles-Dickens/dp/935276644X/ref=sr_1_1_sspa?crid=RFU5905MELGT&dchild=1&keywords=david+copperfield+by+charles+dickens&qid=1624115279&sprefix=david+%2Caps%2C453&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzRkU2SEJCUEJJM0NWJmVuY3J5cHRlZElkPUEwMjgzNjU5MTRXWlA4SURLT0xFQyZlbmNyeXB0ZWRBZElkPUEwMzg3NDU2MUhIR0pHSU1SQVA2RCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+            <a target="_blank" href="#" alt="">
                 <img height="200" src="novel/story18.png" alt="">
                 <p class="text">david coperfield</p>
             </a>
         </div>
     </div>
-
+    <div class="heading">
+        <h1>Books for self development</h1>
+    </div>
     <div class="selfdev group">
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Habits-Highly-Effective-People/dp/1471195708/ref=sr_1_1_sspa?crid=5WPHBHMSAZ07&dchild=1&keywords=7+habits+of+highly+effective+people+in+english&qid=1624115547&sprefix=7+habits+%2Caps%2C451&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyU0Q5SElBTEFIM0w5JmVuY3J5cHRlZElkPUEwMjk5ODk2M1M1QTVESFJaQ0ZLTiZlbmNyeXB0ZWRBZElkPUEwMjU5NzIwQlk3SFdIMUFRMUNXJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self1.jpg" alt="">
                 <p class="text">the 7 habits of highly effective people</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/HOW-WIN-FRIEND-INFLUENCE-PEOPLE/dp/9382449108/ref=sr_1_4?crid=1RDGPO62M3VRY&dchild=1&keywords=how+to+win+friends+and+influence+people&qid=1624115602&sprefix=how+to+win+%2Caps%2C420&sr=8-4">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self2.png" alt="">
                 <p class="text">how to win friends and influence people</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Think-Grow-Rich-Napoleon-Hill/dp/817992792X/ref=sr_1_2?crid=1C2C5F1XO4VOE&dchild=1&keywords=think+and+grow+rich+by+napoleon+hill+english&qid=1624115622&sprefix=think+and+grow+%2Caps%2C438&sr=8-2">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self3.jpg" alt="">
                 <p class="text">think and grow rich</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Power-Now-Journal-Eckhart-Tolle/dp/9388677145/ref=sr_1_3?crid=23IHUO0OK7NXO&dchild=1&keywords=the+power+of+now+journal&qid=1624115656&sprefix=the+power+of+now+journal%2Caps%2C412&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self4.jpg" alt="">
                 <p class="text">the power of now journal</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/4-Hour-Work-Week-Escape-Anywhere/dp/0091929113/ref=sr_1_1?crid=2MER6QM563S37&dchild=1&keywords=the+4+hour+work+week&qid=1624115680&sprefix=the+4+hour%2Caps%2C409&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self5.jpg" alt="">
                 <p class="text">the 4-hour workweek</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Power-Positive-Thinking-Norman-Vincent/dp/0091906385/ref=sr_1_3?crid=31AW3IOHDF0FQ&dchild=1&keywords=the+power+of+positive+thinking&qid=1624116192&sprefix=the+power+of+pos%2Caps%2C717&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self6.jpg" alt="">
                 <p class="text">the power of positive thinking</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Laws-Power-Robert-Greene-Collection/dp/1861972784/ref=sr_1_2?crid=1XOVQALG0YC3N&dchild=1&keywords=48+laws+of+power&qid=1624115719&sprefix=48+%2Caps%2C433&sr=8-2">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self7.jpg" alt="">
                 <p class="text">the 48 laws of power</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/How-Stop-Worrying-Start-Living/dp/8175993952/ref=sr_1_3?crid=UEBV0URZR41W&dchild=1&keywords=how+to+stop+worrying+and+start+living+book&qid=1624115736&sprefix=how+to+stop%2Caps%2C532&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self8.jpeg" alt="">
                 <p class="text">how to stop worrying and start living</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Atomic-Habits-James-Clear/dp/1847941834/ref=sr_1_2?crid=2Z79NMTL3G8XR&dchild=1&keywords=atomic+habit&qid=1624115762&sprefix=atomic+%2Caps%2C538&sr=8-2">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self9.jpg" alt="">
                 <p class="text">atomic habits</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Rich-Dad-Poor-Middle-Updates/dp/1612680194/ref=sr_1_1?crid=2J90F5DMW8FFP&dchild=1&keywords=rich+dad+poor+dad+english&qid=1624115780&sprefix=rich+dad+poor%2Caps%2C523&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self10.jpg" alt="">
                 <p class="text">rich dad poor dad</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Subtle-Art-Not-Giving/dp/0062641549/ref=sr_1_1?crid=1H80CX3DNA2YC&dchild=1&keywords=the+subtle+of+not+giving+a+f---+mark+manson&qid=1624115795&sprefix=the+subtle%2Caps%2C428&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self11.jpg" alt="">
                 <p class="text">the subtle art of not giving a f*ck</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Alchemist-Paulo-Coelho/dp/8172234988/ref=sr_1_1?crid=19681CHSD4O9&dchild=1&keywords=the+alchemist&qid=1624115811&sprefix=the+alchemist%2Caps%2C526&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self12.jpg" alt="">
                 <p class="text">the alchemist</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Deep-Work-Focused-Success-Distracted/dp/0349413681/ref=sr_1_1?crid=2VY2T52AMGP96&dchild=1&keywords=deep+work&qid=1624115830&sprefix=deep+work%2Caps%2C522&sr=8-1">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self13.jpg" alt="">
                 <p class="text">deep work</p>
             </a>
         </div>
         <div class="book">
-            <a target="_blank" href="https://www.amazon.in/Power-Your-Subconscious-Mind-Success/dp/8172345666/ref=sr_1_3?crid=106SNY5184VWV&dchild=1&keywords=power+of+subconscious+mind+english&qid=1624115847&sprefix=power+of+%2Caps%2C460&sr=8-3">
+            <a target="_blank" href="#">
                 <img height="200" src="selfdev/self14.jpg" alt="">
                 <p class="text">power of your subconscious mind</p>
             </a>
         </div>
     </div>
-    
+
 </body>
+
 </html>
