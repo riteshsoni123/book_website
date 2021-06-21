@@ -16,28 +16,48 @@
         }
 
         .quote {
-            padding-top: 121px;
-            padding-left: 25px;
-            position: absolute;
+            margin: 10px;
+            padding-bottom: 20px;
+            /* top: 20px; */
             font-size: 62px;
             font-family: 'Ubuntu', sans-serif;
         }
+        @media only screen and (max-width:1200px){
+            #cover div{
+                display: none;
+            }
+            #cover .info{
+                position:absolute;
+                top: 0px;
+                left: 10px;
+            }
+        }
+        @media only screen and (max-width:650px) {
+            #cover form{
+                display: none;
+            }
+        }
 
-        #cover div{
+        #cover .quote{
             position: absolute;
-            top: 80px;
+            top: 150px;
+            /* right: 30px; */
             left: 63px;
             color: rgb(0 0 0);
         }
 
         #cover img {
-            width: 1490px;
+            width: 100%;
+            /* position: relative; */
             display: block;
             margin: auto;
             border-radius: 10px;
         }
 
         #cover {
+            width: 100%;
+            position: relative;
+            /* border: 2px solid red; */
             padding-top: 10px;
             border-radius: 10px;
         }
@@ -125,7 +145,44 @@
             display: block;
             text-align: center;
         }
-        
+        input[type=text], input[type=passward]{
+            width: 100%;
+            height: 50px;
+            padding-left: 05pxpx;
+            margin: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        #cover .info{
+            /* float:none; */
+            display: inline-block;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            /* border: 2px solid red; */
+        }
+        #cover .info{
+            width: 400px;
+            height: 250px;
+        }
+        .info label{
+            font-size: 20px;
+            margin: 10px;
+        }
+        .info button{
+            margin-left: 20px;
+            margin-top: 23px;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #229900;
+            color: rgb(255, 255, 255);
+        }
 
 
         
@@ -151,6 +208,18 @@
     <div id="cover">
         <img src="cover2.jpg" alt="">
         <div class="quote">A ROOM <br> WITHOUT BOOKS <br> IS LIKE <br> A BODY <br> WITHOUT <br> A SOUL</div>
+        <form >
+            <div class="info">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="pword"><b>Passward</b></label>
+                <input type="passward" placeholder="Enter Passward" name="pword" required>
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        </form>
     </div>
     <div class="heading">
         <h1>Books for financial education</h1>
