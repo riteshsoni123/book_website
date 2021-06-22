@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="dec.css">
     <style>
         body {
+            margin: 0px;
+            padding: 0px;
             background-attachment: fixed;
             background-color: rgb(255, 255, 255);
         }
@@ -18,7 +20,6 @@
         .quote {
             margin: 10px;
             padding-bottom: 20px;
-            /* top: 20px; */
             font-size: 62px;
             font-family: 'Ubuntu', sans-serif;
         }
@@ -36,57 +37,70 @@
             #cover form{
                 display: none;
             }
+            #heading1{
+                font-size: 25px;
+            }
+            #heading2{
+                font-size: 25px;
+            }
+            #heading3{
+                font-size: 25px;
+            }
+            /* .heading h1{
+                font-size: 25px;
+            } */
         }
 
         #cover .quote{
             position: absolute;
             top: 150px;
-            /* right: 30px; */
             left: 63px;
             color: rgb(0 0 0);
         }
 
         #cover img {
             width: 100%;
-            /* position: relative; */
             display: block;
-            margin: auto;
-            border-radius: 10px;
         }
 
         #cover {
             width: 100%;
             position: relative;
-            /* border: 2px solid red; */
-            padding-top: 10px;
-            border-radius: 10px;
         }
 
-        .navbar li a:hover {
-            color: rgb(117, 117, 117);
-            /* background-color: white; */
+        .navbar li:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(83, 83, 83);
         }
 
         .navbar li {
-            float: left;
-            list-style: none;
+            height: 30px;
+            padding-top: 8px;
             padding-left: 20px;
+            list-style: none;
+            padding-right: 28px;
 
         }
 
-        .navbar li a {
-            color: white;
+        .navbar a li {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
         }
 
         .navbar ul {
-            padding-bottom: 17px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0px;
+            padding-top: 0px;
+            height: 30px;
+            padding-bottom: 2px;
         }
 
         .navbar {
-
+            position: absolute;
             padding: 2px;
-            background-color: rgb(56, 56, 56);
-            border-radius: 30px;
+            top: 0px;
+            left: 0px;
         }
 
         a {
@@ -102,8 +116,6 @@
         }
 
         .book {
-            /* position: relative; */
-            /* display: inline-block; */
             border: 5px solid rgb(20, 19, 19);
             border-radius: 10px;
             margin: 10px;
@@ -118,7 +130,6 @@
         }
 
         .book img {
-            /* position: relative; */
             padding-top: 10px;
             display: block;
             margin: auto;
@@ -130,25 +141,29 @@
 
 
         .heading {
+            /* position: relative; */
             /* border: 2px solid red; */
             margin-top: 10px;
             margin-bottom: 10px;
             display: block;
             border: 2px solid #e6d49d;
             border-radius: 20px;
+            border: 2px solid red;
             background-color: rgb(196 185 133);
         }
         .heading h1{
+            /* position: relative; */
             font-size: 50px;
             color: #000000;
             margin: auto;
+            /* border: 2px solid red; */
             display: block;
             text-align: center;
         }
         input[type=text], input[type=passward]{
             width: 100%;
             height: 50px;
-            padding-left: 05pxpx;
+            padding-left: 5px;
             margin: 10px;
             font-size: 15px;
             border-radius: 5px;
@@ -183,6 +198,9 @@
             background-color: #229900;
             color: rgb(255, 255, 255);
         }
+        .info button:hover{
+            opacity: 0.8;
+        }
 
 
         
@@ -193,36 +211,39 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Financial development</a></li>
-                <li><a href="">Self development</a></li>
-                <li><a href="">Novels</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Feedback</a></li>
-            </ul>
-        </nav>
+        
+
+        <div id="cover">
+            <img src="cover2.jpg" alt="">
+            <nav class="navbar">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Financial development</li></a>
+                    <a href=""><li>Self development</li></a>
+                    <a href=""><li>Novels</li></a>
+                    <a href=""><li>Contact</li></a>
+                    <a href=""><li>Feedback</li></a>
+                </ul>
+            </nav>
+            <div class="quote">A ROOM <br> WITHOUT BOOKS <br> IS LIKE <br> A BODY <br> WITHOUT <br> A SOUL</div>
+            <form >
+                <div class="info">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="pword"><b>Passward</b></label>
+                    <input type="passward" placeholder="Enter Passward" name="pword" required>
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            </form>
+        </div>
     </header>
 
-    <div id="cover">
-        <img src="cover2.jpg" alt="">
-        <div class="quote">A ROOM <br> WITHOUT BOOKS <br> IS LIKE <br> A BODY <br> WITHOUT <br> A SOUL</div>
-        <form >
-            <div class="info">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-                <label for="pword"><b>Passward</b></label>
-                <input type="passward" placeholder="Enter Passward" name="pword" required>
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-        </form>
-    </div>
+    
     <div class="heading">
-        <h1>Books for financial education</h1>
+        <h1 id="heading1">Books for financial education</h1>
     </div>
     <div class="financial group">
         <div class="book">
@@ -293,7 +314,7 @@
         </div>
     </div>
     <div class="heading">
-        <h1>Novels</h1>
+        <h1 id="heading2">Novels</h1>
     </div>
     <div class="novel group">
         <div class="book">
@@ -406,7 +427,7 @@
         </div>
     </div>
     <div class="heading">
-        <h1>Books for self development</h1>
+        <h1 id="heading3">Books for self development</h1>
     </div>
     <div class="selfdev group">
         <div class="book">
