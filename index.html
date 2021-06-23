@@ -69,6 +69,8 @@
         }
 
         .navbar li:hover {
+            border: 2px solid white;
+            border-radius: 3px;
             color: rgb(255, 255, 255);
             background-color: rgb(83, 83, 83);
         }
@@ -116,9 +118,11 @@
         }
 
         .book {
-            border: 5px solid rgb(20, 19, 19);
-            border-radius: 10px;
-            margin: 10px;
+            /* border: 5px solid rgb(20, 19, 19); */
+            /* border-radius: 10px; */
+            box-shadow: 7px 7px 15px black;
+            margin: 20px;
+            height: 258px;
             width: 258px;
             background-image: none;
         }
@@ -137,19 +141,32 @@
 
         .book:hover {
             background-color: rgb(165, 165, 165);
+            width: 278px;
+            height: 278px;
+            margin: 10px;
+
+        }
+        .book a{
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 100%;
+            display: block;
         }
 
 
         .heading {
             /* position: relative; */
             /* border: 2px solid red; */
+
             margin-top: 10px;
             margin-bottom: 10px;
             display: block;
-            border: 2px solid #e6d49d;
-            border-radius: 20px;
-            border: 2px solid red;
-            background-color: rgb(196 185 133);
+            margin-right: 10px;
+            box-shadow: 7px 7px 15px rgb(0, 0, 0);
+            /* border: 2px solid #e6d49d; */
+            /* border-radius: 20px; */
+            /* border: 2px solid red; */
+            background-color:rgb(141, 141, 141);
         }
         .heading h1{
             /* position: relative; */
@@ -200,6 +217,7 @@
         }
         .info button:hover{
             opacity: 0.8;
+            border: 2px solid white;
         }
         .foot{
             /* padding-left: 0px; */
@@ -213,18 +231,29 @@
         .foot h3{
             color: white;
         }
+        /* .foot ul{
+            border: 2px solid red;
+        } */
+
         .foot li{
             list-style: none;
             margin: 16px;
+            /* text-decoration: underline; */
             color: white;
         }
+        .foot li:hover{
+            text-decoration: underline;
+        }
         .section{
+            /* border: 2px solid red; */
+            width: 250px;
             margin-top: 25px;
             margin-right: 70px;
         }
         .section ul{
             padding-left: 0px;
         }
+
         .top{
             display: block;
             font-size: 27px;
