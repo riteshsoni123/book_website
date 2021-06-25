@@ -9,11 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dec.css">
+    <script src="https://kit.fontawesome.com/675f41b17a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
         body {
             margin: 0px;
             padding: 0px;
-            background-attachment: fixed;
+            /* position: relative; */
+            /* background-attachment: fixed; */
             background-color: rgb(255, 255, 255);
         }
 
@@ -46,11 +54,11 @@
             #heading3{
                 font-size: 25px;
             }
-            /* .heading h1{
-                font-size: 25px;
-            } */
         }
-
+        header{
+            margin: 0px;
+            padding: 0px;
+        }
         #cover .quote{
             position: absolute;
             top: 150px;
@@ -59,50 +67,51 @@
         }
 
         #cover img {
+            /* display: absolute; */
+            margin: 0px;
             width: 100%;
-            display: block;
+            /* border: 2px solid red; */
+            padding: 0px;
+            /* position: absolute; */
+            position: relative;
         }
 
         #cover {
             width: 100%;
+            padding: 0px;
+            margin: 0px;
             position: relative;
         }
 
-        .navbar li:hover {
-            border: 2px solid white;
-            border-radius: 3px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(83, 83, 83);
+        .navbar ul li a:hover {
+            color: white
         }
 
-        .navbar li {
-            height: 30px;
-            padding-top: 8px;
-            padding-left: 20px;
-            list-style: none;
-            padding-right: 28px;
+        .navbar ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
 
         }
 
-        .navbar a li {
-            font-size: 18px;
-            color: rgb(0, 0, 0);
+        .navbar ul li a {
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            text-transform: uppercase;
         }
 
         .navbar ul {
-            display: flex;
-            flex-wrap: wrap;
-            padding-left: 0px;
-            padding-top: 0px;
-            height: 30px;
-            padding-bottom: 2px;
+            float: right;
+            margin-right: 20px;
         }
 
         .navbar {
-            position: absolute;
-            padding: 2px;
-            top: 0px;
-            left: 0px;
+            /* margin: 0px; */
+            background-color: rgb(87, 87, 87);
+            height: 80px;
+            /* max-height: 80px; */
+            width: 100%;
         }
 
         a {
@@ -118,15 +127,26 @@
         }
 
         .book {
-            /* border: 5px solid rgb(20, 19, 19); */
-            /* border-radius: 10px; */
+            position: block;
             box-shadow: 7px 7px 15px black;
             margin: 20px;
             height: 258px;
             width: 258px;
             background-image: none;
+            /* transition-duration: 1s; */
         }
+        /* .description{
+            position: absolute;
+            border: 2px solid red;
+            width: 100%;
+            height: 100%;
+            display: none;
+            top: 0px;
+            left: 0px;
+        } */
         .group{
+            margin: 10px;
+            /* position: absolute; */
             display: flex;
             width: 100%;
             flex-direction: row;
@@ -136,6 +156,7 @@
         .book img {
             padding-top: 10px;
             display: block;
+            margin: 0px;
             margin: auto;
         }
 
@@ -147,7 +168,6 @@
 
         }
         .book a{
-            /* border: 2px solid red; */
             width: 100%;
             height: 100%;
             display: block;
@@ -155,25 +175,17 @@
 
 
         .heading {
-            /* position: relative; */
-            /* border: 2px solid red; */
-
             margin-top: 10px;
             margin-bottom: 10px;
             display: block;
             margin-right: 10px;
             box-shadow: 7px 7px 15px rgb(0, 0, 0);
-            /* border: 2px solid #e6d49d; */
-            /* border-radius: 20px; */
-            /* border: 2px solid red; */
             background-color:rgb(141, 141, 141);
         }
         .heading h1{
-            /* position: relative; */
             font-size: 50px;
             color: #000000;
             margin: auto;
-            /* border: 2px solid red; */
             display: block;
             text-align: center;
         }
@@ -189,12 +201,12 @@
             border: 1px solid rgb(0, 0, 0);
         }
         #cover .info{
-            /* float:none; */
             display: inline-block;
             position: absolute;
+            padding: 0px;
+            margin: 0px;
             top: 50px;
             right: 50px;
-            /* border: 2px solid red; */
         }
         #cover .info{
             width: 400px;
@@ -220,10 +232,8 @@
             border: 2px solid white;
         }
         .foot{
-            /* padding-left: 0px; */
             background-color: rgb(65 65 65);
             display: flex;
-            /* border: 2px solid red; */
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
@@ -231,21 +241,16 @@
         .foot h3{
             color: white;
         }
-        /* .foot ul{
-            border: 2px solid red;
-        } */
 
         .foot li{
             list-style: none;
             margin: 16px;
-            /* text-decoration: underline; */
             color: white;
         }
         .foot li:hover{
             text-decoration: underline;
         }
         .section{
-            /* border: 2px solid red; */
             width: 250px;
             margin-top: 25px;
             margin-right: 70px;
@@ -262,32 +267,71 @@
             text-align: center;
             color: white;
             background-color: #2a2727;
-            /* border: 2px solid red; */
             width: 100%;
         }
-        
-
-
+        .checkbtn{
+            font-size: 30px;
+            color: black;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 980px){
+            .checkbtn{
+                display: block;
+            }
+            .navbar ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #2c3e50;
+                top: 80px;
+                left: -100%;
+                transition:all 0.5s;
+                text-align: center;
+            }
+            .navbar ul li{
+                display: block;
+            }
+            .navbar ul li a{
+                font-size: 20px;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            #cover{
+                display: none;
+            }
+        }
         
     </style>
-    <title>Document</title>
+    
 </head>
 
 <body>
 
     <header>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Financial development</a></li>
+                <li><a href="">Self development</a></li>
+                <li><a href="">Novels</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Feedback</a></li>
+            </ul>
+        </nav>
         <div id="cover">
             <img src="cover2.jpg" alt="">
-            <nav class="navbar">
-                <ul>
-                    <a href=""><li>Home</li></a>
-                    <a href=""><li>Financial development</li></a>
-                    <a href=""><li>Self development</li></a>
-                    <a href=""><li>Novels</li></a>
-                    <a href=""><li>Contact</li></a>
-                    <a href=""><li>Feedback</li></a>
-                </ul>
-            </nav>
             <div class="quote">A ROOM <br> WITHOUT BOOKS <br> IS LIKE <br> A BODY <br> WITHOUT <br> A SOUL</div>
             <form >
                 <div class="info">
@@ -314,6 +358,9 @@
                 <img height="200" src="financial/rich1.jpg" alt="">
                 <p class="text">the millionaire next door</p>
             </a>
+            <!-- <div class="description">
+                This text contains the description of the vook you want to buy. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatum eos, quisquam fugit quam consequuntur non mollitia nobis modi quas eligendi minima voluptates facilis cupiditate laudantium labore reiciendis impedit! Alias.
+            </div> -->
         </div>
         <div class="book">
             <a target="_blank" href="#">
